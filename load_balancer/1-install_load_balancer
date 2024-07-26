@@ -16,8 +16,8 @@ frontend phinah-frontend
         default_backend phinah-backend
 backend phinah-backend
         balance roundrobin
-        server 6211-web-01 54.236.88.3:80 check
-        server 6211-web-02 52.72.197.81:80 check
+        server 6211-web-01 54.227.24.234:80 check
+        server 6211-web-02 18.209.16.150:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
